@@ -1,79 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-   <main class="container ">
-    <section class="flex gap-14">
-        <div class="grid grid-cols-3 grid-rows-2 flex-1 gap-6 text-center">
-            <div class="bg-slate-300">
-                <img src="images/triangle.png" alt="" class="p-5 mx-auto">
-                <h3 class="px-5 text-2xl">Triangle</h3>
-                <p class="px-5 text-xl">Area = 0.5 X b X h</p>
-                <input class="w-24 m-5 p-2" type="text" name="" id="Triangle1" min="0" placeholder="Base"><span>cm</span>
-                 <input class="w-24 p-2" type="text" name="" id="Triangle2" min="0" placeholder="Height"><span>cm</span>
-                 <p class="px-5 text-2xl mb-3" >Area = <span id="tri-Area">0</span> cm<sup>2</sup></p>
-                <button id="btn-Tri" class="bg-blue-600 text-2xl mb-2 font-medium rounded-md text-center py-2 px-4">Calculate</button>
-            </div>
-            <div class="bg-slate-300">
-                <img src="images/rectangle.png" alt="" class="p-5 mx-auto">
-                <h3 class="px-5 text-2xl">Rectangle</h3>
-                <p class="px-5 text-xl">Area (A) = w X I</p>
-                <input class="w-24 m-5 p-2" type="number" name="" id="" placeholder="Lenght"><span>cm</span>
-                 <input class="w-24 p-2" type="number" name="" id="" placeholder="width"><span>cm</span>
-                 <p class="px-5 text-2xl mb-3">Area = <span>0</span> cm<sup>2</sup></p>
-                <button class="bg-blue-600 text-2xl mb-2 font-medium rounded-md text-center py-2 px-4">Calculate</button>
-            </div>
-            <div class="bg-slate-300">
-                <img src="images/parallelogram.png" alt="" class="p-5 mx-auto">
-                <h3 class="px-5 text-2xl">Parallelogram</h3>
-                <p class="px-5 text-xl">Area (A) = b X h</p>
-                <input class="w-24 m-5 p-2" type="number" name="" id="" placeholder="Base"><span>cm</span>
-                 <input class="w-24 p-2" type="number" name="" id="" placeholder="Height"><span>cm</span>
-                 <p class="px-5 text-2xl mb-3">Area = <span>0</span> cm<sup>2</sup></p>
-                <button class="bg-blue-600 text-2xl font-medium rounded-md text-center py-2 px-4 mb-2">Calculate</button>
-            </div>
-            <div class="bg-slate-300">
-                <img src="images/rhombus.png" alt="" class="p-5 mx-auto">
-                <h3 class="px-5 text-2xl">Rhombus!</h3>
-                <p class="px-5 text-xl">A= (p*q) / 2</p>
-                <input class="w-24 m-5 p-2" type="number" name="" id="" placeholder="p Diagona"><span>cm</span>
-                 <input class="w-24 p-2" type="number" name="" id="" placeholder="q Diagona"><span>cm</span>
-                 <p class="px-5 text-2xl mb-3">Area = <span>0</span> cm<sup>2</sup></p>
-                <button class="bg-blue-600 mb-2 text-2xl font-medium rounded-md text-center py-2 px-4">Calculate</button>
-            </div>
-            <div class="bg-slate-300">
-                <img src="images/pentagon.png" alt="" class="p-5 mx-auto">
-                <h3 class="px-5 text-2xl">Pentagon!</h3>
-                <p class="px-5 text-xl">Area = 0.5 * p * b</p>
-                <input class="w-24 m-5 p-2" type="number" name="" id="" placeholder="Peri"><span>cm</span>
-                 <input class="w-24 p-2" type="number" name="" id="" placeholder="Apo"><span>cm</span>
-                 <p class="px-5 text-2xl mb-3">Area = <span>0</span> cm<sup>2</sup></p>
-                <button class="bg-blue-600 text-2xl font-medium rounded-md text-center py-2 px-4 mb-2">Calculate</button>
-            </div>
-            <div class="bg-slate-300">
-                <img src="images/ellipse.png" alt="" class="p-5 mx-auto">
-                <h3 class="px-5 text-2xl">Ellipse!</h3>
-                <p class="px-5 text-xl">Area = π * a * b</p>
-                <input class="w-24 m-5 p-2" type="number" name="" id="" placeholder="major"><span>cm</span>
-                 <input class="w-24 p-2" type="number" name="" id="" placeholder="Minor"><span>cm</span>
-                <p class="px-5 text-2xl mb-3">Area = <span>0</span> cm<sup>2</sup></p>
-                <button class="bg-blue-600 text-2xl font-medium rounded-md text-center py-2 px-4 mb-2">Calculate</button>
-            </div>
-           
+    <main class="container ">
+        <section class="flex gap-14">
+            <div class="grid grid-cols-3 grid-rows-2 flex-1 gap-6 text-center">
+                <div class="bg-slate-300">
+                    <img src="images/triangle.png" alt="" class="p-5 mx-auto">
+                    <h3 class="px-5 text-2xl">Triangle</h3>
+                    <p class="px-5 text-xl">Area = 0.5 X b X h</p>
+                    <input class="w-24 m-5 p-2" type="number" name="" id="Triangle1" min="0"
+                        placeholder="Base"><span>cm</span>
+                    <input class="w-24 p-2" type="number" name="" id="Triangle2" min="0"
+                        placeholder="Height"><span>cm</span>
+                    <p class="px-5 text-2xl mb-3">Area = <span id="tri-Area">0</span> cm<sup>2</sup></p>
+                    <button id="btn-tri"
+                        class="bg-blue-600 text-2xl mb-2 font-medium rounded-md text-center py-2 px-4">Calculate</button>
+                </div>
+                <div class="bg-slate-300">
+                    <img src="images/rectangle.png" alt="" class="p-5 mx-auto">
+                    <h3 class="px-5 text-2xl">Rectangle</h3>
+                    <p class="px-5 text-xl">Area (A) = w X I</p>
+                    <input class="w-24 m-5 p-2" type="number" name=""min="0" id="rectangle1"
+                        placeholder="Length"><span>cm</span>
+                    <input class="w-24 p-2" type="number" name=""min="0" id="rectangle2" placeholder="width"><span>cm</span>
+                    <p class="px-5 text-2xl mb-3">Area = <span id="rec-Area">0</span> cm<sup>2</sup></p>
+                    <button
+                    id="btn-rec" class="bg-blue-600 text-2xl mb-2 font-medium rounded-md text-center py-2 px-4">Calculate</button>
+                </div>
+                <div class="bg-slate-300">
+                    <img src="images/parallelogram.png" alt="" class="p-5 mx-auto">
+                    <h3 class="px-5 text-2xl">Parallelogram</h3>
+                    <p class="px-5 text-xl">Area (A) = b X h</p>
+                    <input class="w-24 m-5 p-2" type="number"min="0" name="" id="parallelogram1"
+                        placeholder="Base"><span>cm</span>
+                    <input class="w-24 p-2" type="number"min="0" name="" id="parallelogram2"
+                        placeholder="Height"><span>cm</span>
+                    <p class="px-5 text-2xl mb-3">Area = <span id="par-Area">0</span> cm<sup>2</sup></p>
+                    <button id="btn-par"
+                        class="bg-blue-600 text-2xl font-medium rounded-md text-center py-2 px-4 mb-2">Calculate</button>
+                </div>
+                <div class="bg-slate-300">
+                    <img src="images/rhombus.png" alt="" class="p-5 mx-auto">
+                    <h3 class="px-5 text-2xl">Rhombus!</h3>
+                    <p class="px-5 text-xl">A= (p*q) / 2</p>
+                    <input class="w-24 m-5 p-2" type="number"min="0" name="" id="rhombus1" placeholder="p Diagona"><span>cm</span>
+                    <input class="w-24 p-2" type="number"min="0" name="" id="rhombus2" placeholder="q Diagona"><span>cm</span>
+                    <p class="px-5 text-2xl mb-3">Area = <span id="rho-Area">0</span> cm<sup>2</sup></p>
+                    <button id="btn-rho"
+                        class="bg-blue-600 mb-2 text-2xl font-medium rounded-md text-center py-2 px-4">Calculate</button>
+                </div>
+                <div class="bg-slate-300">
+                    <img src="images/pentagon.png" alt="" class="p-5 mx-auto">
+                    <h3 class="px-5 text-2xl">Pentagon!</h3>
+                    <p class="px-5 text-xl">Area = 0.5 * p * b</p>
+                    <input class="w-24 m-5 p-2" type="number"min="0" name="" id="pentagon1" placeholder="Peri"><span>cm</span>
+                    <input class="w-24 p-2" type="number"min="0" name="" id="pentagon2" placeholder="Apo"><span>cm</span>
+                    <p class="px-5 text-2xl mb-3">Area = <span id="pen-Area">0</span> cm<sup>2</sup></p>
+                    <button id="btn-pen"
+                        class="bg-blue-600 text-2xl font-medium rounded-md text-center py-2 px-4 mb-2">Calculate</button>
+                </div>
+                <div class="bg-slate-300">
+                    <img src="images/ellipse.png" alt="" class="p-5 mx-auto">
+                    <h3 class="px-5 text-2xl">Ellipse!</h3>
+                    <p class="px-5 text-xl">Area = π * a * b</p>
+                    <input class="w-24 m-5 p-2" type="number"min="0" name="" id="ellipse1" placeholder="major"><span>cm</span>
+                    <input class="w-24 p-2" type="number" min="0" name="" id="ellipse2" placeholder="Minor"><span>cm</span>
+                    <p class="px-5 text-2xl mb-3">Area = <span id="ell-Area">0</span> cm<sup>2</sup></p>
+                    <button id="btn-ell"
+                        class="bg-blue-600 text-2xl font-medium rounded-md text-center py-2 px-4 mb-2">Calculate</button>
+                </div>
 
-        </div>
-        <div class="bg-slate-100 row-span-2 border-2">
-            <h1 class="text-3xl p-5 text-center">Area calculation</h1>
-        </div>
-    </section>
 
-   </main>
-   <script src="js/utilities.js"></script>
-   <script src="js/Triangle.js"></script>
+            </div>
+            <div class="bg-slate-100 row-span-2 border-2">
+                <h1 class="text-3xl p-5 text-center">Area calculation</h1>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/Triangle.js"></script>
+    <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
 </body>
+
 </html>
